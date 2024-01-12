@@ -1,0 +1,327 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.box1, .box2 {
+  width: 49%;
+  height: 300px;
+  background-color: #fffa5e;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.box2 {
+  background-color: #64ebf7;
+}
+
+.box3 {
+  width: 150%;
+  height: 300px;
+  background-color: #873383;
+  color: black;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.box4 {
+  width: 150%;
+  height: 300px;
+  background-color: #ee6a6a;
+  text-align: center;
+}
+
+
+.logo {
+    display: flex;
+    background-color: #0095da;
+    justify-content:first baseline;
+}
+
+
+    .flex {
+      position: relative;
+      display: flex;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+      gap: 10px;
+      align-items: center;
+      padding: 0 20px;
+      padding-bottom: 10px;
+      margin-bottom: 50px;
+      z-index: 1;
+    }
+
+    .product-card {
+      flex: 0 0 auto;
+      width: 200px;
+      box-shadow: 1px 1px 5px grey;
+      border-radius: 5px;
+      background-color: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .img-card {
+      overflow: hidden;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .product-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .content-text {
+      padding: 10px;
+    }
+
+    .nama-produk {
+      font-size: 16px;
+      margin: 7px 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+    }
+
+    .harga {
+      color: orange;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .discount {
+      color: grey;
+      font-size: 12px;
+      margin: 0;
+    }
+
+    .btn-block {
+      text-align: center;
+      padding: 10px;
+      background-color: #0095da;
+      border-radius: 0 0 5px 5px;
+    }
+
+    .btn-order {
+      color: white;
+      text-decoration: none;
+    }
+
+    .btn-order:hover {
+      color: #0072a7;
+    }
+
+    .arrow-button {
+        display: flex;
+        position: absolute;
+        width: 100%; 
+        justify-content: space-between;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .arrow-btn-left,
+    .arrow-btn-right {
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        transform: translateY(-50%);
+}
+
+    .arrow-btn-left {
+        left: 0;
+}
+
+    .arrow-btn-right {
+        right: 0;
+}
+
+    .arrow-btn:hover {
+        background-color: #2980b9;
+    }
+
+    /* .arrow-btn-right {
+      position: sticky;
+      top: 0%;
+      z-index: 1;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: #0095da;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      opacity: 0.7;
+      display: flex;
+      right: 10px;
+    }
+
+    .arrow-btn-left {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        background-color: #0095da;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        opacity: 0.7;
+        right: 1500px;
+      }
+
+    .arrow-btn:hover {
+      opacity: 1;
+    } */
+
+    .circle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #dedcdc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        right: 1.7%;
+    }
+
+    .arrow-up-btn {
+        width: 35px;
+        height: 35px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 40px;
+        color: #0095da;
+        cursor: pointer;
+        position: fixed;
+        bottom: 33px;
+        /* left: 96%; */
+        right: 1%;
+        transform: translate(-50%);
+
+    }
+
+    .box-bottom {
+      order: 1;
+    }
+
+    .box-top {
+      order: 2;
+    }
+
+    @media only screen and (max-width: 600px) {
+      
+      .container {
+        flex-direction: column-reverse;
+      }
+    
+      .box1, .box2, .box3, .box4 {
+        width: 100%;
+      }
+
+      .box1, .box2 {
+        height: 300px;
+        order: 1;
+      }
+      
+
+      .flex {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Adjust padding as needed */
+      }
+    
+      .product-card {
+        width: 100%;
+        margin-bottom: 10px; /* Adjust spacing as needed */
+      }
+
+      .product-card {
+        height: 200px;
+      }
+  
+      .arrow-button {
+          display: none; /* Sembunyikan tombol panah untuk tampilan mobile */
+      }
+  }
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+        padding: 20px;
+        background-color: #A9A9A9;
+        color: #000000;
+        text-align: center;
+    }
+    
+    .collapse-all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .lorem-ipsum {
+        /* Add your lorem ipsum text styling here */
+    }
+    
+    .hidden {
+        display: none;
+    }
+
+    .copyright {
+        font-size: small;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    
